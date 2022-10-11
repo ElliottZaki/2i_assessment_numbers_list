@@ -3,6 +3,7 @@ class Numbers_List
     REQUIRED_ARRAY_LENGTH = 10
 
     def organise_array(array)
+        check_if_integer(array)
         check_array_length(array)
         sorted_array = sort_in_descending_order(array)
         remove_duplicates(sorted_array)

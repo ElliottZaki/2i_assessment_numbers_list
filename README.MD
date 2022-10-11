@@ -42,3 +42,8 @@ rspec<br />
 ## How to run Linter:
 On CML type:<br />
 rubocop<br />
+
+## Conclusion:
+Given more time, I would have liked to have created another gaurd clause inwhich I could make sure an error is raised if the numbers in an array are less than 1 or greater than 100. <br />
+
+I could also refractor the sort_in_descending_order method with the remove duplicate method in to `array.sort.reverse.uniq`; however, my focus was on seperation of concerns. The way that i structured my code would make it more flexible to tweaks & changes to my individual methods.<br />
