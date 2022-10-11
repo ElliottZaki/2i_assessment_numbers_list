@@ -2,14 +2,6 @@ require './lib/numbers_list'
 
 describe Numbers_List do
     describe '#organise_array' do
-        it 'should  return an array of one element when passed an array of one element' do
-            expect(subject.organise_array([1])).to eq [1]
-        end
-
-        it 'should return an array of two elements when passed an array of two elements' do
-            expect(subject.organise_array([1, 2])).to eq [2, 1]
-        end
-
         it 'should return an array of ten elements having removed any duplicates and sorted into descending order' do
             expect(subject.organise_array([1, 60, 4, 4, 39, 4, 4, 70, 8, 9])).to eq [70, 60, 39, 9, 8, 4, 1]
         end
@@ -36,6 +28,12 @@ describe Numbers_List do
 
         it 'should remove any duplicate numbers from an array of 3 elements' do
             expect(subject.remove_duplicates([1, 2, 4, 4, 4, 4, 7, 8, 9, 10])).to eq [1, 2, 4, 7, 8, 9, 10]
+        end
+    end
+
+    describe "#check_array_length" do
+        it 'throws an error message if array is less than 10 elements' do
+            expect { subject.check_array_length([1, 2]) }.to raise_error
         end
     end
 end
