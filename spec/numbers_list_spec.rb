@@ -40,4 +40,10 @@ describe Numbers_List do
             expect { subject.check_array_length([1, 2, 4, 4, 4, 4, 7, 8, 9, 10, 11, 12]) }.to raise_error
         end
     end
+
+    describe "#check_if_integer" do
+        it 'throws an error message if an element in the array is not an integer' do
+            expect { subject.check_if_integer([1, 2, 4, 6, "x", 3, 4, 5, 7, 10]) }.to raise_error
+        end
+    end
 end

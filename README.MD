@@ -4,15 +4,20 @@
 A 1x hour assessment provided by 2I <br />
 
 ## Criteria:
-“In a language of your choice, using all best practice principles you’re aware of, could you please provide code that reads a list of 10 numbers ranging between 1 to 100.
-Assuming there are 4 duplicates in the list of numbers, the output should remove the duplicates and sort the remaining numbers in descending order. Please state any assumptions you’ve made.
+“In a language of your choice, using all best practice principles you’re aware of, could you please provide code that reads a list of 10 numbers ranging between 1 to 100.<br />
+Assuming there are 4 duplicates in the list of numbers, the output should remove the duplicates and sort the remaining numbers in descending order. <br /> Please state any assumptions you’ve made.<br />
 ## Draft Plan:
-An array of 10 numbers from 1 to 100.
-4x will be duplicated and removed from the output.
-The rest of the numbers will be in descending order.
+An array of 10 numbers from 1 to 100.<br />
+4x will be duplicated and removed from the output.<br />
+The rest of the numbers will be in descending order.<br />
+
+## Edge cases:
+Array does not contain exactly 10 elements. <br />
+Array elements are not of type integer. <br />
+Array elements are not less than 1 or greater than 100. <br />
 
 ## Build Status
-Tesing stage
+Tesing stage<br />
 
 ## Installation instructions:
 On CML type:<br />
