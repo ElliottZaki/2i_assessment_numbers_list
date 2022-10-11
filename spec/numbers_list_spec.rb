@@ -23,5 +23,9 @@ describe Numbers_List do
         it 'should sort an array of ten elements in a descending order' do
             expect(subject.sort_in_descending_order([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to eq [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
         end
+
+        it 'should sort an array of ten randomly alligned elements in a descending order' do
+            expect(subject.sort_in_descending_order([1, 20, 3, 67, 5, 99, 7, 8, 66, 10])).to eq [99, 67, 66, 20, 10, 8, 7, 5, 3, 1]
+        end
     end
 end
