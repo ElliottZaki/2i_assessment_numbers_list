@@ -7,4 +7,8 @@ class Numbers_List
     def sort_in_descending_order(array)
         array.sort.reverse
     end
+
+    def remove_duplicates(array)
+        array.uniq
+    end
 end

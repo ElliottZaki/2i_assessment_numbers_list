@@ -28,4 +28,10 @@ describe Numbers_List do
             expect(subject.sort_in_descending_order([1, 20, 3, 67, 5, 99, 7, 8, 66, 10])).to eq [99, 67, 66, 20, 10, 8, 7, 5, 3, 1]
         end
     end
+
+    describe '#remove_duplicates' do
+        it 'should remove any duplicate numbers from an array of 3 elements' do
+            expect(subject.remove_duplicates([1, 2, 2])).to eq [1, 2]
+        end
+    end
 end
