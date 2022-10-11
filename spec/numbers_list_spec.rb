@@ -7,11 +7,11 @@ describe Numbers_List do
         end
 
         it 'should return an array of two elements when passed an array of two elements' do
-            expect(subject.organise_array([1, 2])).to eq [1, 2]
+            expect(subject.organise_array([1, 2])).to eq [2, 1]
         end
 
-        it 'should return an array of ten elements when passed an array of ten elements' do
-            expect(subject.organise_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to eq [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        it 'should return an array of ten elements having removed any duplicates and sorted into descending order' do
+            expect(subject.organise_array([1, 60, 4, 4, 39, 4, 4, 70, 8, 9])).to eq [70, 60, 39, 9, 8, 4, 1]
         end
     end
 
