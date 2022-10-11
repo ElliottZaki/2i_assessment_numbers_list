@@ -14,4 +14,10 @@ describe Numbers_List do
             expect(subject.organise_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to eq [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         end
     end
+
+    describe '#sort_in_descending_order' do
+        it 'should sort an array in a descending order' do
+            expect(subject.sort_in_descending_order([1, 2])).to eq [2, 1]
+        end
+    end
 end

@@ -4,5 +4,7 @@ class Numbers_List
         array
     end
 
-
+    def sort_in_descending_order(array)
+        array.sort.reverse
+    end
 end
