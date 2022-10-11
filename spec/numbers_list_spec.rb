@@ -33,5 +33,9 @@ describe Numbers_List do
         it 'should remove any duplicate numbers from an array of 3 elements' do
             expect(subject.remove_duplicates([1, 2, 2])).to eq [1, 2]
         end
+
+        it 'should remove any duplicate numbers from an array of 3 elements' do
+            expect(subject.remove_duplicates([1, 2, 4, 4, 4, 4, 7, 8, 9, 10])).to eq [1, 2, 4, 7, 8, 9, 10]
+        end
     end
 end
