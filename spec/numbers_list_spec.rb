@@ -35,5 +35,9 @@ describe Numbers_List do
         it 'throws an error message if array is less than 10 elements' do
             expect { subject.check_array_length([1, 2]) }.to raise_error
         end
+
+        it 'throws an error message if array is more than 10 elements' do
+            expect { subject.check_array_length([1, 2, 4, 4, 4, 4, 7, 8, 9, 10, 11, 12]) }.to raise_error
+        end
     end
 end
